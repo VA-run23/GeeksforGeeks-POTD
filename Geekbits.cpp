@@ -1,5 +1,5 @@
 //Program to calculate the number of days required to get n geekBits
-//BY : 23Neurons
+
 #include <bits/stdc++.h>
 using namespace std;
 
