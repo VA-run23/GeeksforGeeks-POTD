@@ -33,13 +33,21 @@ public:
                 num2 = num2->next;
             }
 
-            carry = sum / 10;  
-            curr->next = new Node(sum % 10); 
+            carry = sum / 10;
+            curr->next = new Node(sum % 10);
             curr = curr->next;
         }
 
         Node* result = reverseList(dummyHead->next);
-        delete dummyHead; 
+        delete dummyHead;
+
+        
+        while (result && result->data == 0 && result->next) {
+            Node* temp = result;
+            result = result->next;
+            delete temp;
+        }
+
         return result;
     }
 };
