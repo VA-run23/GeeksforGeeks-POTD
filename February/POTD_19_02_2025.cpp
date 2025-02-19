@@ -1,3 +1,5 @@
+///MY OWN SOLUTION: Having complexity of o(N * k)
+
 struct details{
     Node* curr ;
     Node* next;
