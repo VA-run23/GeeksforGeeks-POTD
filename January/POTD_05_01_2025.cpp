@@ -16,3 +16,6 @@ class Solution {
         return pairs;
     }
 };
+////EXPLANATION:
+//Since we increment the 'left' pointer after counting pairs, this ensures we account for all unique pairs involving the current 'left' element with every element between 'left' and 'right'.
+// By adding (right - left), we count the number of such unique pairs, as each element between 'left' and 'right' forms a pair with 'arr[left]' that sums up to less than the target.
