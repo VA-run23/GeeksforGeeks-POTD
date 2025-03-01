@@ -1,12 +1,12 @@
-//{ Driver Code Starts
-// Initial Template for C++
-
-#include <bits/stdc++.h>
-using namespace std;
-
-
-// } Driver Code Ends
-
+/*
+1. Initialize two stacks: one for strings (B) and one for numbers (num).
+2. Iterate through the input string (s) to process each character.
+3. If a digit is found, calculate the full number and push it onto the num stack.
+4. If '[' is encountered, push the current ans onto the B stack and reset ans.
+5. If ']' is encountered, pop from both stacks and repeat the string ans 'count' times.
+6. Append the repeated string to the previous part and update ans.
+7. Continue until the entire input string is processed, then return the decoded string.
+*/
 
 class Solution {
   public:
@@ -48,23 +48,3 @@ class Solution {
         return ans;
     }
 };
-
-
-//{ Driver Code Starts.
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        string s;
-        cin >> s;
-
-        Solution ob;
-        cout << ob.decodedString(s) << "\n";
-
-        cout << "~"
-             << "\n";
-    }
-    return 0;
-}
-// } Driver Code Ends
