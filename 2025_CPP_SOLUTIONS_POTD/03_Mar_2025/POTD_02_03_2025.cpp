@@ -35,7 +35,8 @@ class Solution {
                     temp.pop();
                 }
             } else {
-                // Otherwise, update max normally
+                // if the removed element is not the maxVal then just compare the new element with maxVal 
+                //and then push the new maxVal to the ans vector
                 maxVal = max(maxVal, arr[i]);
             }
             ans.push_back(maxVal);
