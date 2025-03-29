@@ -26,7 +26,7 @@ class Solution {
         vector<int> slot(maxDL + 1, -1);
         priority_queue<pair<int, int>> pq;
 
-        int totalPro = 0, count = 0;
+        int totalPro = 0,count = 0;
 
         for (const auto &job : jobs) {
             int jobPro = job.first;
