@@ -17,7 +17,7 @@ class Solution {
 
         vector<pair<int, int>> jobs(n);
         for (int i = 0; i < n; i++) {
-            jobs[i] = {profit[i], deadline[i]};
+            jobs[i] = {profit[i], deadline[i]}; 
         }
 
         sort(jobs.rbegin(), jobs.rend());
