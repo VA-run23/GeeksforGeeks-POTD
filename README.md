@@ -19,3 +19,5 @@ To enhance accessibility, solutions are structured **month-wise**, making naviga
 Find all solutions in our **GitHub repository**: [GeeksforGeeks-POTD](https://www.geeksforgeeks.org/problem-of-the-day)  
 
 ✨ **Happy Coding! Keep Learning & Keep Growing!** 🚀  
+<br>
+![](https://komarev.com/ghpvc/?username=VA-run&label=Visitors&color=blue)
