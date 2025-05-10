@@ -7,6 +7,7 @@
     The missing number is derived using the initial term and calculated index.
     Time Complexity: O(log N), Space Complexity: O(1), where N is the array size.
 */
+
 class Solution {
   public:
     int findMissing(vector<int> &arr) {
