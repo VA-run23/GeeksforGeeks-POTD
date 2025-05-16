@@ -13,7 +13,7 @@ class Solution {
   public:
     vector<int> findSmallestRange(vector<vector<int>>& arr) {
         // code here
-        int k = arr.size();
+        int k = arr.size(); 
         priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> minHeap;
         int mxVal = INT_MIN, rangeStart = 0, rangeEnd = INT_MAX;
 
