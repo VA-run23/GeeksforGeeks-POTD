@@ -1,5 +1,4 @@
 /* 
-    This function calculates the number of ways to achieve sum 'x' using 'n' dice with 'm' faces.
     1. We initialize a DP table where dp[i][j] represents ways to get sum 'j' with 'i' dice.
     2. Base case: With one die, only values between 1 to 'm' can be formed directly.
     3. We iterate over dice count, updating possible sums using previous values.
