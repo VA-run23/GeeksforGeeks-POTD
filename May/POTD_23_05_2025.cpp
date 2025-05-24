@@ -12,7 +12,7 @@ class Solution {
 public:
     int noOfWays(int m, int n, int x) {
         vector<vector<int>> dp(n+1, vector<int>(x+1, 0));
-        // code here
+        // code here 
         for (int i = 1; i <= m && i <= x; i++) {
             dp[1][i] = 1;
         }
