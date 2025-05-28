@@ -7,7 +7,6 @@
     6. If no such rectangle is found after checking all possibilities, the function returns false.
     7. The approach efficiently scans the matrix, ensuring the condition is met while minimizing unnecessary checks.
 */
-
 class Solution {
 public:
     bool ValidCorner(vector<vector<int>>& mat) {
