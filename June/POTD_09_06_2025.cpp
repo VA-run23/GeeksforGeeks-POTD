@@ -5,8 +5,7 @@
     3. The 'isDeadEnd' function initializes two sets: 'nodes' (to track all nodes) and 'lvs' (to track leaf nodes).
     4. The value '0' is inserted into 'nodes' to handle edge cases where '1' is a leaf node.
     5. The 'solve' function is called to populate 'nodes' and 'lvs' with relevant values from the BST.
-    6. The function iterates through 'lvs', checking if both 'leaf - 1' and 'leaf + 1' exist in 'nodes',
-        indicating a dead end.
+    6. The function iterates through 'lvs', checking if both 'leaf - 1' and 'leaf + 1' exist in 'nodes', indicating a dead end.
     7. If a dead end is found, the function returns 'true'; otherwise, it returns 'false'.
 */
 
