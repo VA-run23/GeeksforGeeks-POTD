@@ -10,8 +10,6 @@
     7. If a dead end is found, the function returns 'true'; otherwise, it returns 'false'.
 */
 
-
-
 class Solution {
   public:
     bool solve(Node* root, unordered_set<int>& nodes, unordered_set<int>& lvs) {
