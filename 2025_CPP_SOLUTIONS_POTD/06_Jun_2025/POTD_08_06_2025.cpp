@@ -8,7 +8,6 @@
     7. If a valid sum-string pattern is found, the function returns 'true'; otherwise, it returns 'false'.
 */
 
-
 class Solution {
 public:
     string addStrings(string num1, string num2) {
