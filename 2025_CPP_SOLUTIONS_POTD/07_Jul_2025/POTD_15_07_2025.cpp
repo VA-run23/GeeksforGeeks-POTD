@@ -1,7 +1,7 @@
 /*
-    1. The function `divby13` checks if a large number represented as a string is divisible by 13.
-    2. It maintains a variable `rem` to track the running remainder modulo 13.
-    3. For each character `ch` in the string, it updates the remainder using the formula:
+    1. The function 'divby13' checks if a large number represented as a string is divisible by 13.
+    2. It maintains a variable 'rem' to track the running remainder modulo 13.
+    3. For each character 'ch' in the string, it updates the remainder using the formula:
         rem = (rem * 10 + digit) % 13.
     4. This simulates long division digit by digit without needing to convert the full number.
     5. At each step, the intermediate number is kept small, ensuring constant space usage.
