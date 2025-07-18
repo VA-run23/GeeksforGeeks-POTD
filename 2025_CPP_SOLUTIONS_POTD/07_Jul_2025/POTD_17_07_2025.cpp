@@ -8,6 +8,7 @@
     7. Space complexity is O(log k) for storing prime factors in the map.
 */
 
+
 class Solution {
   public:
     int maxKPower(int n, int k) {
