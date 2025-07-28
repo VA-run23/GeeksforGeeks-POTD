@@ -25,10 +25,7 @@ class Solution {
             colVal = 0;
             for(int j = 0; j<n; j++){
                 rowVal +=mat[i][j];
-            }
-            
-            for(int k = 0; k<n; k++){
-                colVal += mat[k][i];
+                colVal += mat[j][i];
             }
             maxcv = max(maxcv, colVal);
             maxrv = max(maxrv, rowVal);
