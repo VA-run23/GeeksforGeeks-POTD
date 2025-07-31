@@ -1,11 +1,11 @@
 /* 
-    1. This function identifies the largest integer that lies in at least 'k' intervals from the input list.
-    2. It uses a sweep line technique by recording +1 at the start and -1 just after the end of each interval in a map.
-    3. The map 'events' automatically keeps interval points sorted, helping us track changes in interval overlap efficiently.
-    4. As we iterate through the map, 'activeInterval' maintains the count of current overlapping intervals.
-    5. Whenever the count is ≥ k, we update 'powerful' to the greatest value satisfying the condition.
-    6. This ensures that the returned value is the maximum point present in at least 'k' intervals.
-    7. Time Complexity: O(N log N) for map operations; Space Complexity: O(N) for storing event markers.
+    1. This function finds the largest integer included in at least 'k' intervals from the input list.
+    2. It uses a sweep line strategy by adding +1 at the start and -1 at one past the end (i.e., end + 1) in a sorted map.
+    3.  Key Insight: By doing events[end + 1] -= 1, we ensure the interval stays active through 'end' and expires immediately after, preserving the inclusive nature of the input intervals.
+    4. The map keeps all critical points sorted so we can track active overlaps in linear order.
+    5. While traversing, if active overlaps reach or exceed 'k', we record the current position (point - 1) as a candidate for "powerful integer".
+    6. We continually update the result to reflect the maximum such integer found.
+    7. Time Complexity: O(N log N) due to map inserts and traversal; Space Complexity: O(N) for storing event points.
 */
 
 class Solution {
