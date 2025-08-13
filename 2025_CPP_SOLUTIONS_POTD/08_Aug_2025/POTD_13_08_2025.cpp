@@ -1,4 +1,3 @@
-
 /*
 The correct approach:
 
