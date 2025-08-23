@@ -19,4 +19,3 @@ class Solution {
         return val[(mat.size()*mat[0].size())/2];
     }
 };
-
