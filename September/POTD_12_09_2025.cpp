@@ -9,7 +9,6 @@
       Time Complexity: O(n log n) due to sorting; Space Complexity: O(1) as no extra space is used.
 */
 
-
 class Solution {
   public:
     int getMinDiff(vector<int> &arr, int k) {
