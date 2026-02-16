@@ -1,11 +1,11 @@
 /*
-1. This function checks if a person can attend all meetings without overlaps.
-2. It first sorts the intervals (meetings) based on their start times.
-3. Sorting ensures meetings are in chronological order for easy comparison.
-4. Then, it iterates through consecutive meetings to detect overlaps.
-5. If the end time of one meeting exceeds the start time of the next, return false.
-6. Otherwise, if no overlaps are found, return true.
-7. Time Complexity: O(n log n) due to sorting; Space Complexity: O(1) since sorting is in-place.
+    1. This function checks if a person can attend all meetings without overlaps.
+    2. It first sorts the intervals (meetings) based on their start times.
+    3. Sorting ensures meetings are in chronological order for easy comparison.
+    4. Then, it iterates through consecutive meetings to detect overlaps.
+    5. If the end time of one meeting exceeds the start time of the next, return false.
+    6. Otherwise, if no overlaps are found, return true.
+    7. Time Complexity: O(n log n) due to sorting; Space Complexity: O(1) since sorting is in-place.
 */
 
 class Solution {
